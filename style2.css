@@ -1,0 +1,334 @@
+/* Hex for Background and Words color
+Cyber Grape = 49306B 
+Light pink = DDC4DD
+Palid Violet = DCCFEC
+Clear Violet = A997DF
+
+For the cards
+// Green 
+Aquamarine = 90FFDC X
+Ligth Green = 87CBAC
+Pistachio = 99D17B
+//Yellow
+Middle Green Yellow = CBD081
+//Blue
+Metalic Seaweed (Middle Blue) = 1D8A99
+
+Color for the Hearts
+//Red
+Tyrian Purple= 501537
+Amarathan Pink = F49CBB
+Chinese Red = B02E0C
+*/
+
+/* Font-Styles
+For the Cards:
+**font-family: 'Fredoka', sans-serif
+**font-family: 'Hubballi', cursive
+
+For the last gift
+**font-family: 'Inspiration', cursive;
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Hubballi&family=Inspiration&display=swap" rel="stylesheet">
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #c3a9e4;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  perspective: 1000px;
+  /*   justify-content: center;
+  align-items: center; */
+  font-family: "Hubballi", cursive;
+  overflow-y: hidden;
+}
+
+/* Carta 1 */
+.card1 {
+  width: 200px;
+  height: 280px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s;
+  left: 80px;
+  top: 50px;
+}
+
+.card-img1 {
+  background: url(/Images/carta1.png);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transform: translateZ(40px);
+}
+
+.card-body1 {
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translate3d(-56%, -47%, -40px) rotateY(180deg);
+  width: 85%;
+  height: 85%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 5px solid #fff;
+}
+
+.card-body1 .bg {
+  background: #e4b6e4;
+  position: absolute;
+  border-radius: 100px;
+  width: 0%;
+  transition: 0.5s;
+}
+.card-body1 .bg:nth-child(1) {
+  height: 25%;
+  transform-origin: left;
+  top: 0;
+  left: -30%;
+  transform: rotate(-10deg);
+}
+.card-body1 .bg:nth-child(2) {
+  height: 50%;
+  transform-origin: right;
+  top: 5%;
+  right: -30%;
+  transform: rotate(-10deg);
+}
+.card-body1 .bg:nth-child(3) {
+  height: 50%;
+  transform-origin: left;
+  top: 70%;
+  left: -30%;
+  transform: rotate(-10deg);
+}
+.card1:hover .card-body1 .bg {
+  width: 200%;
+  transition-delay: 1s;
+}
+.card1:hover .card-body1 .bg:nth-child(2) {
+  transition-delay: 1.5s;
+}
+.card1:hover .card-body1 .bg:nth-child(3) {
+  transition-delay: 2s;
+}
+.card1:hover {
+  transform: rotateY(180deg);
+}
+
+/* general things */
+.content {
+  position: relative;
+  padding: 30px 10px;
+  transition: 0.5s;
+  text-align: center;
+  opacity: 0;
+}
+.title {
+  margin-bottom: 15px;
+  margin-top: -15px;
+  font-size: 18px;
+}
+
+.card1:hover .content {
+  opacity: 1;
+  transition-delay: 2.5s;
+}
+
+/* Card 2 */
+
+.card2 {
+  width: 330px;
+  height: 220px;
+  position: relative;
+  left: 80px;
+  top: 350px;
+}
+
+.card-img2 {
+  background: url(/Images/carta2.png);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  animation: cartajapo 30s infinite;
+  animation-delay: 10s;
+}
+
+@keyframes cartajapo {
+  0% {
+    transform: translateY();
+  }
+  50% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.card-body2 {
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  z-index: -1;
+  transform: translate3d(-23%, -49%, -40px);
+  width: 95%;
+  height: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 5px solid rgb(27, 25, 26);
+  background-color: #f3e598;
+}
+
+.card-body2 .bg {
+  background: rgb(240, 239, 239);
+  position: absolute;
+  border-radius: 50px;
+  width: 0%;
+  transition: 0.5s;
+}
+.card-body2 .bg:nth-child(1) {
+  height: 45%;
+  transform-origin: left;
+  top: 8px;
+  left: -10%;
+  transform: rotate(-10deg);
+}
+.card-body2 .bg:nth-child(2) {
+  height: 60%;
+  transform-origin: right;
+  top: 18px;
+  right: -30%;
+  transform: rotate(-9.5deg);
+}
+.card-body2 .bg:nth-child(3) {
+  height: 30%;
+  transform-origin: left;
+  top: 80%;
+  left: 24%;
+  transform: rotate(-2deg);
+}
+.card2:hover .card-body2 .bg {
+  width: 200%;
+  transition-delay: 1s;
+}
+.card2:hover .card-body2 .bg:nth-child(2) {
+  transition-delay: 1.5s;
+}
+.card2:hover .card-body2 .bg:nth-child(3) {
+  transition-delay: 2s;
+}
+
+.content2 {
+  position: relative;
+  padding: 30px 10px;
+  transition: 0.5s;
+  text-align: center;
+  opacity: 0;
+}
+.title2 {
+  margin-bottom: 15px;
+  margin-top: -15px;
+  font-size: 18px;
+}
+
+.card2:hover .content2 {
+  opacity: 1;
+  transition-delay: 2.5s;
+}
+
+/* Card 3 */
+.card3 {
+  width: 450px;
+  height: 565px;
+  position: relative;
+  right: -390px;
+  bottom: 560px;
+}
+
+.card-img3 {
+  background: url(/Images/carta3.png);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.cardE {
+  width: 400px;
+  height: 100px;
+  font-size: 1.8rem;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  position: relative;
+  bottom: 550px;
+  right: 0;
+  text-align: center;
+}
+.card-bodyE {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.spE {
+  font-size: 4.5rem;
+  font-family: "Inspiration", cursive;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.ant {
+  position: relative;
+  bottom: 270px;
+  right: 56%;
+  width: 200px;
+  height: 150px;
+  font-size: 1rem;
+  text-align: justify;
+  z-index: -2;
+}
+#antl {
+  position: relative;
+  top: -27px;
+  right: -82px;
+  text-decoration: none;
+  color: #e744e7;
+}
+#arrow2 {
+  font-size: 22px;
+}
+
+#antl::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #49306b;
+  position: absolute;
+  bottom: -5px;
+  left: 24%;
+  transform: translateX(-40%);
+  transition: width 0.3s;
+}
+
+#antl:hover::after {
+  width: 45%;
+}
