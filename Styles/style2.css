@@ -64,7 +64,7 @@ body {
 }
 
 .card-img1 {
-  background: url(/Images/carta1.png);
+  background: url(Images/carta1.png);
   position: relative;
   width: 100%;
   height: 100%;
@@ -158,7 +158,7 @@ body {
 }
 
 .card-img2 {
-  background: url(/Images/carta2.png);
+  background: url(Images/carta2.png);
   position: relative;
   width: 100%;
   height: 100%;
@@ -263,7 +263,7 @@ body {
 }
 
 .card-img3 {
-  background: url(/Images/carta3.png);
+  background: url(Images/carta3.png);
   position: relative;
   width: 100%;
   height: 100%;
