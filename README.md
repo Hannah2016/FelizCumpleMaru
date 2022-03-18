@@ -1,2 +1,2 @@
 # FelizCumpleMaru
-Birthday gift for one of my best friends, I love you Mari.
+Birthday gift for one of my best friend, I love you Mari.
