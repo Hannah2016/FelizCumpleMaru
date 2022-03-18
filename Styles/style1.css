@@ -73,7 +73,7 @@ body {
   font-size: larger;
   line-height: 100px;
   -webkit-text-stroke: 2px #e744e7;
-  background: url(FelizCumpleMaru/Images/h1fondo.png);
+  background: url(.../Images/h1fondo.png);
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: fondo 20s linear infinite;
